@@ -1,12 +1,7 @@
 package fr.wildcodeschool.thewizardproject.models;
 
-import org.springframework.stereotype.Component;
+public interface Outfit {
 
-@Component
-public class Outfit {
+	public String toString();
 
-	@Override
-	public String toString() {
-		return "The wizard's outfit is white.";
-	}
 }

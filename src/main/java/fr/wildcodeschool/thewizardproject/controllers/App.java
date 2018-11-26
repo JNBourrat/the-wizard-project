@@ -8,7 +8,10 @@ public class App {
 	public void start() {
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(
 				"classpath*:applicationContext.xml");
-		WizardInterface aWizard = context.getBean("dumbledore", WizardInterface.class);
+
+//		Enter "gandalf" or "dumbledore" to see different quotes and robe colors
+
+		WizardInterface aWizard = context.getBean("gandalf", WizardInterface.class);
 		context.close();
 		System.out.println("");
 		System.out.println("******************************************************************************");
